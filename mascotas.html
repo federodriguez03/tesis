@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas</title>
+    <link rel="stylesheet" href="recursos/style.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <ul class="menu">
+                <li>
+                    <a href="#">Turnos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Ver turnos</a></li>
+                        <li><a href="#">Registrar nuevo turno</a></li>
+                        <li><a href="#">Calendario</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Ventas</a>
+                    <ul class="submenu">
+                        <li><a href="#">Registrar venta</a></li>
+                        <li><a href="#">Consultar stock</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Administración</a>
+                    <ul class="submenu">
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Mascotas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="filtros">
+            <h2>Filtrar por:</h2>
+            <h3>Nombre:</h3>
+            <textarea name="Nombre" id=""></textarea>
+            <h3>Especie</h3>
+            <label>
+                <input type="radio" name="mascota" value="perro">
+                Perro
+            </label>
+            <label>
+                <input type="radio" name="mascota" value="gato">
+                Gato
+            </label>
+            <label>
+                <input type="radio" name="mascota" value="ambos">
+                ambos
+            </label>
+
+            <button>Filtrar</button>  
+        </div>
+
+        <section id="historial-medico" class="section-block-historial">
+            <h2>Próximos Turnos</h2>
+            <ul class="historial-list">
+                <li>
+                    <span class="nombre">TERRY</span>
+                    <div class="acciones">
+                        <button class="btn ver-mas">Ver más</button>
+                        <button class="btn modificar">Modificar</button>
+                        <button class="btn borrar">Borrar</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="nombre">MIA</span>
+                    <div class="acciones">
+                        <button class="btn ver-mas">Ver más</button>
+                        <button class="btn modificar">Modificar</button>
+                        <button class="btn borrar">Borrar</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="nombre">LANA</span>
+                    <div class="acciones">
+                        <button class="btn ver-mas">Ver más</button>
+                        <button class="btn modificar">Modificar</button>
+                        <button class="btn borrar">Borrar</button>
+                    </div>
+                </li>
+                <!-- Repite para más turnos -->
+            </ul>
+            <div class="turnos-actions">
+                <button onclick="window.location.href='calendario.html'" class="btn calendario">Ver calendario</button>
+                <button onclick="window.location.href='nuevo_turno.html'" class="btn registrar">Registrar turno</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

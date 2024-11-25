@@ -1,0 +1,361 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* LOGIN */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* PANTALLA DE INICIO */
+.container {
+    display:flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Panel de usuario */
+.user-panel {
+    width: 25%;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-panel img {
+    width:95%;
+    border-radius: 10%;;
+    background-color: #ddd;
+}
+
+.user-panel h3 {
+    margin-bottom: 15px;
+}
+
+.user-panel p {
+    margin: 10px 0;
+}
+
+/* Contenido principal */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #333; /* Fondo del nav */
+    padding: 10px;
+}
+
+/* Menú principal */
+.menu {
+    list-style: none; /* Elimina puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinea elementos horizontalmente */
+    gap: 20px; /* Espaciado general entre los elementos principales */
+}
+
+.menu > li {
+    position: relative; /* Necesario para submenús */
+}
+
+/* Enlaces del menú principal */
+.menu > li > a {
+    text-decoration: none; /* Elimina subrayado */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno dentro de cada enlace */
+    margin-right: 10px; /* Espacio adicional entre enlaces */
+    display: inline-block; /* Permite aplicar márgenes y paddings */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu > li > a:hover {
+    color: #007bff; /* Cambia de color al pasar el mouse */
+    background-color: #444; /* Fondo visible al hacer hover */
+    border-radius: 5px; /* Bordes redondeados para hover */
+}
+
+/* Submenú */
+.submenu {
+    list-style: none; /* Elimina puntos de lista */
+    margin: 0;
+    padding: 0;
+    position: absolute; /* Para posicionar debajo del padre */
+    top: 100%; /* Posición justo debajo del elemento principal */
+    left: 0;
+    background-color: #444; /* Fondo del submenú */
+    display: none; /* Oculto por defecto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    border-radius: 5px;
+}
+
+.submenu li {
+    margin: 5px 0; /* Espacio vertical entre los elementos del submenú */
+}
+
+.submenu li a {
+    text-decoration: none; /* Elimina subrayado */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno dentro de cada enlace */
+    display: block; /* Enlaces ocupan toda la línea */
+    transition: background-color 0.3s ease;
+}
+
+.submenu li a:hover {
+    background-color: #555; /* Fondo al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Mostrar submenú al pasar el mouse */
+.menu > li:hover .submenu {
+    display: block; /* Muestra el submenú */
+}
+
+
+
+/* Bloques de contenido */
+.content-sections {
+    display: flex;
+    gap: 20px; /* Separación entre columnas */
+}
+
+.section-block {
+    flex: 1;
+    /*background: white;*/  
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 10px;
+    border-color: #555;
+    box-shadow: 0 4px 6px rgba(0.1, 0.1, 0.1, 0.1);
+    height: fit-content;
+}
+
+.section-block h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Listas de turnos */
+.turnos-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.turnos-list li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo general del bloque */
+.section-block-historial {
+    border: 1px solid #000; /* Borde negro */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo del título */
+.section-block-historial h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Lista de turnos */
+.historial-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.historial-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Nombre de la mascota */
+.historial-list .nombre {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Acciones */
+.historial-list .acciones {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botones */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.ver-mas {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.modificar {
+    background-color: #FFA500;
+    color: white;
+}
+
+.borrar {
+    background-color: #FF4D4D;
+    color: white;
+}
+
+/* Botones finales (calendario y registrar turno) */
+.turnos-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.calendario {
+    background-color: #007BFF;
+    color: white;
+}
+
+.registrar {
+    background-color: #28A745;
+    color: white;
+}
+
+/* Botones generales hover */
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .user-panel {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .content-sections {
+        flex-direction: column;
+    }
+}

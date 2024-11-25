@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursos/style.css">
+    <title>Calendario</title>
+</head> 
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <ul class="menu">
+                <li>
+                    <a href="#">Turnos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Ver turnos</a></li>
+                        <li><a href="#">Registrar nuevo turno</a></li>
+                        <li><a href="#">Calendario</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Ventas</a>
+                    <ul class="submenu">
+                        <li><a href="#">Registrar venta</a></li>
+                        <li><a href="#">Consultar stock</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Administración</a>
+                    <ul class="submenu">
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Mascotas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="calendario-turnos" class="section-block">
+            <h2>Calendario de Turnos</h2>
+            <button id="filtrar-datos" class="btn">Filtrar datos</button>
+            <div id="calendar"></div>
+            <script type="module" src="js/calendario.js"></script>
+        </section>
+    </main>
+</body>
+</html>
