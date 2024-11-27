@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Médico - Mascota</title>
+    <link rel="stylesheet" href="recursos/style.css">
+</head>
+<body>
+    <main class="main-container">
+        <!-- Sección de filtros -->
+        <section class="filter-section">
+            <h3>Seleccionar fecha</h3>
+            <input type="date" id="filter-date" class="filter-date">
+            <h4>Estado de consulta</h4>
+            <div class="filter-status">
+                <label>
+                    <input type="radio" name="status" value="realizada"> Realizada
+                </label>
+                <label>
+                    <input type="radio" name="status" value="cancelada"> Cancelada
+                </label>
+                <label>
+                    <input type="radio" name="status" value="pendiente"> Pendiente
+                </label>
+            </div>
+        </section>
+
+        <!-- Sección de historial -->
+        <section class="history-section">
+            <div class="history-header">
+                <h3>Historial Médico</h3>
+            </div>
+            <div class="history-list">
+                <div class="history-item pending">
+                    <h4>10/10/2024: Pendiente</h4>
+                    <p>Motivo: Vacunación</p>
+                    <p>Nro. de consulta: 009847</p>
+                    <button>Abrir</button>
+                </div>
+                <div class="history-item completed">
+                    <h4>4/9/2024: Realizada</h4>
+                    <p>Motivo: Control general</p>
+                </div>
+                <div class="history-item canceled">
+                    <h4>18/8/2024: Cancelada</h4>
+                    <p>Motivo: Desparasitación</p>
+                </div>
+                <!-- Agregar más items aquí -->
+            </div>
+        </section>
+
+        <!-- Sección de detalles -->
+        <aside class="pet-details">
+            <img src="recursos/imagenes/dog-icon.png" alt="Icono mascota">
+            <h3>PANCHO</h3>
+            <p>Tutor: Juan González</p>
+            <p>Sexo: Macho</p>
+        </aside>
+    </main>
+</body>
+</html>
